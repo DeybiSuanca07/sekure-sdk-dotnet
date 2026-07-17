@@ -60,6 +60,8 @@ namespace Sekure.Runtime
         /// It has essential information about the product and the necessary parameters.</param>
         Task<QuotedProductLot> Quote(ExecutatbleProductLot executatbleProductLot);
 
+        Task<QuotedProduct> UpdateQuote(ExecutableProduct executableProduct, Guid sessionId);
+
         /// <summary>
         /// Confirms the purchase of the product and allows to deliver a policy to the policy holder who was registered in the quote.
         /// This method will return a list of all the products available in sekure. 
